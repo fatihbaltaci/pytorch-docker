@@ -11,8 +11,12 @@ RUN pip install scipy==1.3.0 \
                 geopy==1.19.0 \
                 scikit-learn==0.21.2 \
                 xgboost==0.82 \
-                Shapely==1.6.4.post2
+                requests==2.22.0 \
+                Shapely==1.6.4.post2 \
+                fpdf==1.7.2
 
 RUN pip install Flask==1.1.1
+
+RUN pip install mgrs==1.3.5
 
 WORKDIR /workspace
